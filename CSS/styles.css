@@ -1,0 +1,274 @@
+body {
+  background-color: #cccccc;
+  /* margin: 0 auto 8rem; auto; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.short {
+  margin: 0 auto 8rem; auto;
+}
+
+/* footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} */
+
+.short-page {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #CCCCCC;
+}
+
+.navbar-brand {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 3rem;
+}
+
+a.navbar-brand:hover {
+  color: #d40000;
+}
+
+.nav-link {
+  margin: auto 1rem;
+  color: #b6b1b1;
+}
+
+.bg-dark {
+  background-color: #cccccc;
+  color: #b6b1b1;
+}
+
+hr {
+  padding-top: 0;
+  border-bottom: .5rem;
+  margin-bottom: 0;
+  margin-top: 11rem;
+  border-color: black;
+}
+
+.hr {
+  margin: 2rem 0;
+}
+
+.fixed-top {
+  background-color: #CCCCCC;
+}
+
+.book-and-description {
+  padding-top: 3rem;
+  font-size: 1.2rem;
+}
+
+.navbar-expand-lg {
+  font-size: 1.2rem;
+}
+
+a.nav-link {
+  color: black;
+}
+
+a.nav-link:hover {
+  color: #d40000;
+}
+
+a {
+  color: black;
+}
+
+a.azgth-links:hover {
+  color: #d40000;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.title {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+a.download:hover {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+.next-page {
+  color: red;
+}
+
+a.next-page:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.story-info {
+  font-family: "Montserrat", serif;
+  font-size: 1rem;
+}
+
+.left {
+  float: right;
+
+}
+
+a:hover {
+  color: red;
+}
+
+.azgth {
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.azgth-week {
+  font-family: "Cinzel", serif;
+  font-size: 1.75rem;
+}
+.container008{
+  background-color: #b6b1b1;
+  width: 100%;
+  /*position: absolute;*/
+  margin: auto;
+  /*position: fixed;
+  vertical-align: middle;*/
+  padding-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.75em;
+  margin-top: 5rem;
+}
+
+.container009 {
+  background-color: #b6b1b1;
+  width: 100%;
+  /*position: absolute;*/
+  margin: auto;
+  /*position: fixed;
+  vertical-align: middle;*/
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.75em;
+  margin-top: 5rem;
+}
+
+.nav-marni {
+  background-color: #cccccc;
+  height:inherit;
+  border-color:#cccccc;
+  border:50px;
+}
+
+.BoxOverride001 {
+  margin: auto 0;
+  padding-bottom: .5rem;
+}
+
+.container001 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container002 {
+  position: absolute;
+  float: right;
+  right: 0;
+  bottom: 0;
+}
+
+.container003 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: "Cinzel", serif;
+  font-size: 3.125em;
+  z-index: 60;
+}
+
+.purchase {
+  height: 75px;
+  float: right;
+  margin-top: 2em;
+}
+
+.regular {
+  text-decoration: underline;
+  color: blue;
+}
+
+a.regular:hover {
+  color: blue;
+}
+
+.Download {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  height: 75px;
+  line-height: 50px;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 20;
+  background-color: #B6B1B1;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.form-box {
+  border: auto 1px;
+  border-color: black;
+}
+
+.center {
+  text-align: center;
+}
+
+.submit {
+  /*background-color:#cccccc;
+  color:red;*/
+  font-weight: bold;
+  border-color: black;
+  float: center;
+}
+
+.events-link {
+  font-weight: bold;
+}
+
+.events-link:hover {
+  font-weight: bold;
+  color: red;
+}
+
+.v-center {
+  vertical-align: middle;
+}
+
+.event-image {
+  width: 100%;
+}
+
+/*.opposite {
+  float:right;
+}
