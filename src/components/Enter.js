@@ -4,6 +4,10 @@ import './css/enter.css'
 import thumbprint from './images/thumbprint2.png'
 import {useHistory} from 'react-router-dom'
 
+styled.body`
+background-color: #cccccc
+`
+
 const LargeDiv = styled.div`
     display: flex;
     justify-content: center;
@@ -22,8 +26,16 @@ const TextDiv = styled.div`
     z-index: 60;
 `
 
+const Name = styled.h1`
+    font-size: 6rem;
+    margin-bottom: 12%;
+    font-weight: bold;
+`
+
 const EnterClick = styled.h3`
     text-decoration: underline;
+    font-size:3.5rem;
+    font-weight: bold;
     &:hover {
         color: #d40000;
     }
@@ -48,7 +60,7 @@ const Enter = () => {
         <div>
             <LargeDiv>
                 <TextDiv>
-                    <h1>Marni Joelen</h1>
+                    <Name>Marni Joelen</Name>
                     {/* LINK */}
                     <EnterClick onClick={enter}>ENTER</EnterClick>
                 </TextDiv>

@@ -3,28 +3,3 @@ body {
     /* margin: 0 auto 8rem; auto; */
     font-family: "Montserrat", sans-serif;
 }
-
-.large-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.text-div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-family: "Cinzel", serif;
-    font-size: 3.125em;
-    z-index: 60;
-}
-
-.thumbprint {
-    position: absolute;
-    float: right;
-    right: 0;
-    bottom: 0;
-  }

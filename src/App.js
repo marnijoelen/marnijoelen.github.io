@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Switch, Route} from 'react-router-dom'
+import {createGlobalStyle} from 'styled-components'
 
 // Pages
 import Enter from './components/Enter'
@@ -25,9 +26,16 @@ import Biography from './components/Biography'
 import Contact from './components/Contact'
 import Events from './components/Events'
 
+const GlobalStyle = createGlobalStyle`
+    body {
+        color: ${props => (props.graybackground ? '#cccccc !important' : 'black')};
+    }
+`
+
 function App() {
   return (
     <div>
+      <GlobalStyle graybackground/>
       <Switch>
         {/* Enter page */}
         
@@ -35,59 +43,52 @@ function App() {
           <Enter/>
         </Route>
 
-        {/* Stories */}
-        <Route path='/stories'>
-          
-          <Route path='/dead-men-tell-tales'>
+        {/* Stories */}          
+          <Route path='/stories/dead-men-tell-tales'>
             <DeadMenTellTales/>
           </Route>
           
-          <Route path='/henzo-and-the-drawn-cats'>
+          <Route path='/stories/henzo-and-the-drawn-cats'>
             <Henzo/>
           </Route>
           
-          <Route path='/the-hunters-chase'>
+          <Route path='/stories/the-hunters-chase'>
             <HuntersChase/>
           </Route>
 
-          <Route path='/sideshow-comic'>
+          <Route path='/stories/sideshow-comic'>
             <Sideshow/>
           </Route>
 
-          <Route path='/the-rive'>
+          <Route path='/stories/the-rive'>
             <TheRive/>
           </Route>
 
-        </Route>
-
         {/* Zombies */}
-        <Route path='/cyoa-zombies'>
           
-          <Route path='/start-your-adventure'>
+          <Route path='/cyoa-zombies/start-your-adventure'>
             <Start/>
           </Route>
 
-          <Route path='/week-1'>
+          <Route path='/cyoa-zombies/week-1'>
             <Week1/>
           </Route>
 
-          <Route path='/week-2'>
+          <Route path='/cyoa-zombies/week-2'>
             <Week2/>
           </Route>
 
-          <Route path='/week-3'>
+          <Route path='/cyoa-zombies/week-3'>
             <Week3/>
           </Route>
 
-          <Route path='/week-4'>
+          <Route path='/cyoa-zombies/week-4'>
             <Week4/>
           </Route>
 
-          <Route path='/week-5'>
+          <Route path='/cyoa-zombies/week-5'>
             <Week5/>
           </Route>
-
-        </Route>
 
         <Route path='/biography'>
           <Biography/>
