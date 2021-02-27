@@ -4,7 +4,7 @@ import '../css/enter.css'
 
 import {Button} from 'reactstrap'
 
-import NavBar from '../NavBar'
+import NavBar from '../NavBar/NavBar'
 
 
 
@@ -12,7 +12,7 @@ const DeadMenTellTales = () => {
     return (
         <div>
             <NavBar/>
-            <Button color="danger">Danger!</Button>
+            
         </div>
     )
 }
