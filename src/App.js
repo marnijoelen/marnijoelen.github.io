@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import {Switch, Route} from 'react-router-dom'
-import {createGlobalStyle} from 'styled-components'
+// import {createGlobalStyle} from 'styled-components'
 
 // Pages
 import Enter from './components/Enter'
@@ -26,16 +25,16 @@ import Biography from './components/Biography'
 import Contact from './components/Contact'
 import Events from './components/Events'
 
-const GlobalStyle = createGlobalStyle`
-    body {
-        color: ${props => (props.graybackground ? '#cccccc !important' : 'black')};
-    }
-`
+// const GlobalStyle = createGlobalStyle`
+//     body {
+//         color: ${props => (props.graybackground ? '#cccccc !important' : 'black')};
+//     }
+// `
 
 function App() {
   return (
     <div>
-      <GlobalStyle graybackground/>
+      {/* <GlobalStyle graybackground/> */}
       <Switch>
         {/* Enter page */}
         
