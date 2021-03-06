@@ -8,6 +8,10 @@ import Story from '../Story'
 import sideshow from '../images/Sideshow-cover.jpg'
 import indyImage from '../images/IndyPlanet.png'
 
+const Page = styled.div`
+    background-color: #CCCCCC;
+`
+
 const Footer = styled.footer`
     bottom: 0;
 `
@@ -26,7 +30,7 @@ const Sideshow = () => {
     }
 
     return (
-        <div>
+        <Page>
             <NavBar/>
             <Story
                 title={sideshowInfo.title}
@@ -38,7 +42,7 @@ const Sideshow = () => {
             <Footer>
                 <FooterInfo/>
             </Footer>
-        </div>
+        </Page>
     )
 }
 

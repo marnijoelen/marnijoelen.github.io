@@ -10,6 +10,10 @@ import Story from '../Story'
 import dmttImage from '../images/DMTT-cover.png'
 import amazonImage from '../images/Amazon.jpg'
 
+const Page = styled.div`
+    background-color: #CCCCCC;
+`
+
 const Footer = styled.footer`
     bottom: 0;
 `
@@ -29,7 +33,7 @@ const DeadMenTellTales = () => {
     }
     
     return (
-        <div>
+        <Page>
             <NavBar/>
             <Story 
             title={deadMenInfo.title}
@@ -41,7 +45,7 @@ const DeadMenTellTales = () => {
             <Footer>
                 <FooterInfo/>
             </Footer>
-        </div>
+        </Page>
     )
 }
 

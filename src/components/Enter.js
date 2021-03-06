@@ -4,8 +4,9 @@ import './css/enter.css'
 import thumbprint from './images/thumbprint2.png'
 import {useHistory} from 'react-router-dom'
 
-styled.body`
-background-color: #cccccc
+const Page = styled.div`
+    background-color: #CCCCCC;
+    height: 100vh;
 `
 
 const LargeDiv = styled.div`
@@ -57,18 +58,17 @@ const Enter = () => {
     }
 
     return (
-        <div>
+        <Page>
             <LargeDiv>
                 <TextDiv>
                     <Name>Marni Joelen</Name>
-                    {/* LINK */}
                     <EnterClick onClick={enter}>ENTER</EnterClick>
                 </TextDiv>
             </LargeDiv>
             <Thumbprint>
                 <img src={thumbprint} alt="Bloody Thumbprint"/>
             </Thumbprint>
-        </div>
+        </Page>
     )
 }           
 
