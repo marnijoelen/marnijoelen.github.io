@@ -14,11 +14,11 @@ import TheRive from './components/Stories/TheRive'
 
 // AZGTH
 import Start from './components/CYOA-Zombies/Start'
-import Week1 from './components/CYOA-Zombies/Week1'
-import Week2 from './components/CYOA-Zombies/Week2'
-import Week3 from './components/CYOA-Zombies/Week3'
-import Week4 from './components/CYOA-Zombies/Week4'
-import Week5 from './components/CYOA-Zombies/Week5'
+import Week1 from './components/CYOA-Zombies/Weeklys/Week1'
+import Week2 from './components/CYOA-Zombies/Weeklys/Week2'
+import Week3 from './components/CYOA-Zombies/Weeklys/Week3'
+import Week4 from './components/CYOA-Zombies/Weeklys/Week4'
+import Week5 from './components/CYOA-Zombies/Weeklys/Week5'
 
 // Other
 import Biography from './components/Biography'

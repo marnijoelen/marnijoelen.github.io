@@ -8,6 +8,10 @@ import Story from '../Story'
 import henzoImage from '../images/Henzo-cover.jpg'
 import amazonImage from '../images/Amazon.jpg'
 
+const Page = styled.div`
+    background-color: #CCCCCC;
+`
+
 const Footer = styled.footer`
     bottom: 0;
 `
@@ -26,7 +30,7 @@ const Henzo = () => {
     }
 
     return (
-        <div>
+        <Page>
             <NavBar/>
             <Story 
             title={henzoInfo.title}
@@ -38,7 +42,7 @@ const Henzo = () => {
             <Footer>
                 <FooterInfo/>
             </Footer>
-        </div>
+        </Page>
     )
 }
 

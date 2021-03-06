@@ -1,28 +1,41 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+} from 'reactstrap';
 import styled from 'styled-components'
 import {useHistory} from 'react-router-dom'
 
 const FullNav = styled.div`
     display:flex;
+    justify-content:center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    background-color: #CCCCCC;
 `
 
-const FullBar = styled.nav``
-
-// Toggle between this and navigation
-const ToggleButton = styled.button``
-
-const Navigation = styled.div``
-const Category = styled.ul`
-    display:flex;
-    justify-content: space-evenly;
+const NavBar = styled(Navbar)`
+    padding: 1rem 1rem 0;
+    border-bottom: 1px solid black;
 `
-const Dropdown = styled.li``
-const StoriesDrop = styled.a``
-const DropdownMenu = styled.div``
-const StoryLink = styled.a``
 
-const List = styled.li``
-const Link = styled.a``
+const DropdownTogg = styled(DropdownToggle)`
+    font-weight: bold;
+`
+
+const NaviLink = styled(NavLink)`
+    margin: auto 1.5rem;
+    font-weight: bold;
+`
+
 
 const NavInfo = () => {
 
@@ -41,62 +54,69 @@ const NavInfo = () => {
     const contact = () => {history.push("/contact")}
     const events = () => {history.push("/upcoming-events")}
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => setIsOpen(!isOpen);
+
     return (
         <FullNav>
 
-            <FullBar>
-
-                <ToggleButton/>
-
-                <Navigation>
-
-                    <Category>
-
-                        <Dropdown>
-
-                            <StoriesDrop>Stories</StoriesDrop>
-
-                            <DropdownMenu>
-
-                                <StoryLink onClick={sideshow}>Sideshow</StoryLink>
-                                <StoryLink onClick={dmtt}>Dead Men Tell Tales</StoryLink>
-                                <StoryLink onClick={henzo}>Henzo and the Drawn Cats</StoryLink>
-                                <StoryLink onClick={huntersChase}>The Hunter's Chase</StoryLink>
-                                <StoryLink onClick={theRive}>The Rive</StoryLink>
-
+            <NavBar light expand="md">
+                
+                <NavbarToggler onClick={toggle} />
+                
+                <Collapse isOpen={isOpen} navbar>
+                
+                    <Nav className="me-auto" navbar>
+                        
+                        <UncontrolledDropdown nav inNavbar>
+                            <DropdownTogg nav caret>
+                                Stories
+                            </DropdownTogg>
+                            <DropdownMenu left>
+                                <DropdownItem onClick={sideshow}>
+                                    Sideshow
+                                </DropdownItem>
+                                <DropdownItem onClick={dmtt}>
+                                    Dead Men Tell Tales
+                                </DropdownItem>
+                                <DropdownItem onClick={henzo}>
+                                    Henzo and the Drawn Cats
+                                </DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem onClick={huntersChase}>
+                                    The Hunter's Chase
+                                </DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem onClick={theRive}>
+                                    The Rive
+                                </DropdownItem>
                             </DropdownMenu>
-                            
-                        </Dropdown>
-
-                        <List>
-                            <Link onClick={cyoa}>
+                        </UncontrolledDropdown>
+                        
+                        <NavItem>
+                            <NaviLink onClick={cyoa}>
                                 Choose Your Own Adventure: Zombies
-                            </Link>
-                        </List>
+                            </NaviLink>
+                        </NavItem>
+                        
+                        <NavItem>
+                            <NaviLink onClick={bio}>Biography</NaviLink>
+                        </NavItem>
+                        
+                        <NavItem>
+                            <NaviLink onClick={contact}>Contact</NaviLink>
+                        </NavItem>
+                        
+                        <NavItem>
+                            <NaviLink onClick={events}>Upcoming Events</NaviLink>
+                        </NavItem>
+                        
+                    </Nav>
 
-                        <List>
-                            <Link onClick={bio}>
-                                Biography
-                            </Link>
-                        </List>
+                </Collapse>
 
-                        <List>
-                            <Link onClick={contact}>
-                                Contact
-                            </Link>
-                        </List>
-
-                        <List>
-                            <Link onClick={events}>
-                                Upcoming Events
-                            </Link>
-                        </List>
-
-                    </Category>
-
-                </Navigation>
-
-            </FullBar>
+            </NavBar>
 
         </FullNav>
     )

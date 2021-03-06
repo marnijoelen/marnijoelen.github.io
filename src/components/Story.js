@@ -22,6 +22,8 @@ const Info = styled.div`
 `
 const Title = styled.h2``
 const Description = styled.p`
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
     text-align: justify;
 `
 const BuyHere = styled.a``
@@ -35,19 +37,22 @@ const BuyWhere = styled.img`
 const Story = props => {
 
     const {title,description,image,buycon,purchase} = props
-    console.log(image)
-    console.log(purchase)
+    console.log(description)
 
     return (
         <Container>
 
         <ImageBox>
-            <ImageItself src={image} alt="Dead Men Tell Tales (book cover)"/>
+            <ImageItself src={image} alt={title} />
         </ImageBox>
 
         <Info>
             <Title>{title}</Title>
-            <Description>{description}</Description>
+            <Description>    
+                {description.map(para => {
+                    return <p>{para}</p>
+                })}
+            </Description>
             <BuyHere href={purchase} target="_blank">
                 <BuyWhere src={buycon}/>
             </BuyHere>
