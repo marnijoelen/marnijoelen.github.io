@@ -59,6 +59,11 @@ const ShortFooter = styled.footer`
         position: static;
         width: auto;
     }
+
+    @media screen and (max-height: 850px) {
+        position: static;
+        width: auto;
+    }
 `
 
 const Start = () => {

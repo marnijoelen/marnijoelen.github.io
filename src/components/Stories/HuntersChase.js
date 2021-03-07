@@ -46,6 +46,11 @@ const ShortFooter = styled.footer`
     position: absolute;
     bottom: 0;
     width: 100%;
+
+    @media screen and (max-height: 575px) {
+        position: static;
+        width: auto;
+    }
 `
 
 const HuntersChase = () => {
