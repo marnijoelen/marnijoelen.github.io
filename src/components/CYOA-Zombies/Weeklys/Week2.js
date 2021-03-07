@@ -43,15 +43,7 @@ const StoryInfo = styled.p`
     font-size: 1rem;
     text-align: justify;
 `
-const LetsGo = styled.p``
-const LetsGoNow = styled.a`
-    color:red;
 
-    &:hover {
-        color:red;
-        font-weight: bold;
-    }
-`
 
 const RightChoice = styled.strong`
     &:hover {
