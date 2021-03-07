@@ -7,10 +7,20 @@ const Container = styled.div`
     /* justify-content:center; */
     margin:auto;
     padding: 4% 0;
+
+    @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 const ImageBox = styled.div`
     width: 100rem;
+
+    @media screen and (max-width: 1100px) {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
 `
 const ImageItself = styled.img`
     width: 100%;
@@ -32,6 +42,10 @@ const BuyWhere = styled.img`
     float:right;
     margin-right: 12%;
     margin-top: 2%;
+
+    @media screen and (max-width: 1100px) {
+        float: none;
+    }
 `
 
 const Story = props => {

@@ -5,7 +5,8 @@ import {useHistory} from 'react-router-dom'
 
 const Page = styled.div`
     background-color: #CCCCCC;
-    height: 100vh;
+    height: 150vh;
+    /* width: 110vh; */
 `
 
 const LargeDiv = styled.div`
@@ -24,12 +25,20 @@ const TextDiv = styled.div`
     font-family: "Cinzel", serif;
     font-size: 3.125em;
     z-index: 60;
+
+    @media screen and (max-width: 1400px) {
+        width: 100%;
+    }
 `
 
 const Name = styled.h1`
     font-size: 6rem;
     margin-bottom: 12%;
     font-weight: bold;
+
+    @media screen and (max-width: 1400px) {
+        margin-bottom: 6%;
+    }
 `
 
 const EnterClick = styled.h3`
@@ -46,6 +55,11 @@ const Thumbprint = styled.div`
     float: right;
     right: 0;
     bottom: 0;
+
+    @media screen and (max-width: 1000px) {
+        position: fixed;
+        width: 90%;
+    }
 `
 
 const Enter = () => {

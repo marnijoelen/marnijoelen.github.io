@@ -14,6 +14,7 @@ const Container = styled.div`
     width: 55%;
     margin:auto;
     padding: 4% 0;
+    height: 80vh;
 `
 
 const Info = styled.div`

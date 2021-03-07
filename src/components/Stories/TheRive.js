@@ -10,10 +10,29 @@ import Story from '../Story'
 
 const Page = styled.div`
     background-color: #CCCCCC;
+    height: 100vh;
+
+    @media screen and (max-width: 1100px) {
+        height: 100%;
+    }
+
+    @media screen and (max-height: 800px) {
+        height: 100%;
+    }
 `
 
-const Footer = styled.footer`
+const ShortFooter = styled.footer`
+    position: absolute;
     bottom: 0;
+    width: 100%;
+
+    @media screen and (max-width: 1100px) {
+        position: static;
+    }
+
+    @media screen and (max-height: 800px) {
+        position: static;
+    }
 `
 
 
@@ -41,9 +60,9 @@ const TheRive = () => {
             buycon={theRiveInfo.buycon}
             purchase={theRiveInfo.purchase}
             />
-            <Footer>
+            <ShortFooter>
                 <FooterInfo/>
-            </Footer>
+            </ShortFooter>
         </Page>
     )
 }

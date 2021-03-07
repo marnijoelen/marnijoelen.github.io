@@ -31,9 +31,17 @@ const EventListing = styled.div`
     justify-content:center;
     align-items:center;
     margin: 2rem;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
 `
 const EventImg = styled.img`
     width: 20rem;
+    
+    @media screen and (max-width: 767px) {
+        padding-bottom: 1.5rem;
+    }
 `
 const EventD = styled.div`
     width: 20rem;
@@ -41,6 +49,10 @@ const EventD = styled.div`
 const EventDeets = styled.p`
     font-weight: bold;
     font-size: 1.2rem;
+
+    @media screen and (max-width: 767px) {
+        font-size: 1.4rem;
+    }
 `
 
 const Footer = styled.footer`

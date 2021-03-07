@@ -15,6 +15,10 @@ const StoryTime = styled.div`
     display: flex;
     width: 55%;
     margin: 2rem auto;
+    
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
 `
 
 const WeekInd = styled.p`

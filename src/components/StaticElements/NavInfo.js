@@ -25,6 +25,10 @@ const FullNav = styled.div`
 const NavBar = styled(Navbar)`
     padding: 1rem 1rem 0;
     border-bottom: 1px solid black;
+
+    @media screen and (max-width: 767px) {
+        border: none;
+    }
 `
 
 const DropdownTogg = styled(DropdownToggle)`

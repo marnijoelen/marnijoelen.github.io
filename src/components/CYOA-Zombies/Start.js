@@ -16,6 +16,10 @@ const StoryTime = styled.div`
     width: 55%;
     margin: 2rem auto;
     height: 80vh;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
 `
 
 const StoryNav = styled.div`
@@ -50,6 +54,11 @@ const ShortFooter = styled.footer`
     position: absolute;
     bottom: 0;
     width: 100%;
+
+    @media screen and (max-width: 976px) {
+        position: static;
+        width: auto;
+    }
 `
 
 const Start = () => {

@@ -20,6 +20,7 @@ const HeaderNav = styled.nav`
     padding: 2% 0 2% 4%;
     display: flex;
     align-content: center;
+
 `
 
 const Name = styled.a`

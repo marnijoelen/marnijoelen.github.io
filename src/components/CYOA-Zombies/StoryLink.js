@@ -8,6 +8,11 @@ const Page = styled.div`
     background-color: #CCCCCC;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 `
 
 const StoryLinks = styled.a`
@@ -19,6 +24,10 @@ const StoryLinks = styled.a`
         color: #d40000;
         text-decoration: none;
         font-weight: bolder;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 0 1.5rem;
     }
 `
 
